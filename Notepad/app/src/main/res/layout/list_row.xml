@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- TODO:(optional) create an interface for code files -->
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/note_row"
+        android:layout_toRightOf="@+id/note_row"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="400dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:id="@+id/note_row"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="-9dp"
+        android:contentDescription="@string/icon_for_the_row"
+        app:srcCompat="@drawable/note_row" />
+
+</RelativeLayout>
